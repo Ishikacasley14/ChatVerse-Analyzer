@@ -52,6 +52,11 @@ To run this project locally, follow these steps:
 ### in case of invalid data
 ![image](demo1.png)
 
+## Live Demo
+
+You can view the live demo of the WhatsApp Chat Analyzer application [here](https://ishikacasley14-chatverse-analyzer-main-nxpshp.streamlit.app/).
+
+
 ## Contributing
 
 If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes. 
