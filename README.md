@@ -49,6 +49,9 @@ To run this project locally, follow these steps:
 
 ![image](demo.png)
 
+### in case of invalid data
+![image](demo1.png)
+
 ## Contributing
 
 If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes. 
