@@ -1,34 +1,33 @@
-# ChatVerse Analyzer
+# WhatsApp Chat Analyzer
 
-ChatVerse Analyzer is a comprehensive tool for analyzing WhatsApp chat data. It provides detailed insights into messaging patterns, emoji usage, word frequency, and more. This application helps users gain valuable insights from their WhatsApp conversations through various charts and metrics.
+## Description
+
+The WhatsApp Chat Analyzer is a Streamlit application that provides comprehensive analysis of WhatsApp conversations. It includes features like message statistics, emoji usage, word frequency, and more.
 
 ## Features
 
-- **Chat Statistics**: Analyze total messages, words, media shared, links shared, and deleted messages.
-- **User Activity**: Visualize messaging frequency and activity levels of different users.
-- **Emoji Analysis**: See the distribution and frequency of emojis used in chats.
-- **Word Frequency**: Identify the most common words used in conversations.
-- **Timelines**: View monthly and daily messaging timelines.
-- **Weekly Activity Map**: Visualize user activity across weeks.
-  ## Installation
+- Analyze WhatsApp chat files for various metrics.
+- View messaging statistics, media shared, and deleted messages.
+- Generate visualizations such as emoji analysis, common words, monthly and daily timelines.
+- Explore chat activity with word clouds and heatmaps.
 
-To install and use ChatVerse Analyzer, follow these steps:
+## Installation
 
-1. **Clone the Repository**
+To run this project locally, follow these steps:
+
+1. Clone the repository:
 
     ```bash
     git clone https://github.com/Ishikacasley14/ChatVerse-Analyzer.git
     ```
 
-2. **Navigate to the Project Directory**
+2. Navigate to the project directory:
 
     ```bash
     cd ChatVerse-Analyzer
     ```
 
-3. **Install Dependencies**
-
-    Make sure you have Python 3.x installed. Install the required Python packages using pip:
+3. Install the required dependencies:
 
     ```bash
     pip install -r requirements.txt
@@ -36,32 +35,23 @@ To install and use ChatVerse Analyzer, follow these steps:
 
 ## Usage
 
-1. **Run the Streamlit Application**
+1. Run the Streamlit app:
 
     ```bash
     streamlit run app.py
     ```
 
-2. **Upload Your Chat File**
+2. Upload a WhatsApp chat text file and follow the on-screen instructions to analyze the chat.
 
-   - Export the chat from WhatsApp on your phone and save it as a TXT file.
-   - Use the file uploader in the sidebar of the application to select and upload your chat file.
+## Screenshots
 
-3. **Select and Analyze**
+### Main Dashboard
 
-   - Choose the date format used in your chat file.
-   - Select the user or group you want to analyze, or choose "Everyone" for overall statistics.
-   - Click "Show Analysis" to view detailed insights.
+![image](demo.png)
 
 ## Contributing
 
-Contributions are welcome! If you have any suggestions or improvements, please open an issue or submit a pull request.
-
-1. **Fork the Repository**
-2. **Create a New Branch**
-3. **Commit Your Changes**
-4. **Push to Your Fork**
-5. **Create a Pull Request**
+If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes. 
 
 ## License
 
@@ -69,9 +59,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any questions or feedback, please reach out to [Ishika Casley](https://www.linkedin.com/in/ishika-casley/).
+Developed by Ishika Casley
 
-## Acknowledgments
-
-- Special thanks to the developers and contributors of the libraries and tools used in this project.
-
+- [LinkedIn](https://www.linkedin.com/in/ishika-casley/)
+- [GitHub](https://github.com/Ishikacasley14)
