@@ -5,12 +5,64 @@ import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
 import seaborn as sns
 import functions
+from PIL import Image
+
+im = Image.open("what.ico")
+st.set_page_config(
+    page_title="WhatsApp Analysis",
+    page_icon=im,
+    layout="wide",
+)
+
+col1, col2, col3, col4 = st.columns(4)
+with col1:
+    st.markdown("Do Visit @: ")
+with col2:
+    st.markdown("[LinkedIn](https://www.linkedin.com/in/ishika-casley/)")
+with col3:
+    st.markdown("[GitHub](https://github.com/Ishikacasley14)")
+with col4:
+    st.markdown("[My Portfolio](https://your-portfolio-link.com)") 
+
 
 st.title('WhatsApp Chat Analyzer')
-file = st.file_uploader("Choose a file")
+# Sidebar content
+col1, col2, col3, col4 = st.sidebar.columns([1, 2, 2, 1])
+with col2:
+    st.image('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png', width=90)
+with col3:
+    st.image('analy.png', width=90)
 
-if file:
-    df = functions.generateDataFrame(file)
+st.sidebar.caption(
+    'This application lets you analyze WhatsApp conversations in a very comprehensive manner, with charts, metrics, '
+    'and other forms of analysis.'
+)
+st.sidebar.markdown('Developed with Streamlit, Developed by Ishika Casley')
+
+# File uploader in the sidebar
+uploaded_file = st.sidebar.file_uploader("Choose a TXT file", type="txt")
+
+# Main content
+with st.expander('See!!.. How it works?'):
+    st.subheader('Steps to Analyze:')
+    st.markdown(
+        '1. Export the chat by going to WhatsApp on your phone, opening the chat, clicking on the three dots, '
+        'selecting "More," and then choosing "Export Chat" without media. Save the file to your desired location.'
+    )
+    st.markdown(
+        '2. Browse or drag and drop the chat file.'
+    )
+    st.markdown('3. Select a user or group to analyze, or leave the default setting of "All" to analyze for all users.')
+    st.markdown('4. Click the "Show Analysis" button.')
+    st.markdown(
+        '5. Enable "Wide mode" for a better viewing experience in settings, or close the sidebar on mobile for improved view.'
+    )
+    st.markdown(
+        '6. To analyze for a single user, select their name from the dropdown and click "Show Analysis" again.'
+    )
+    st.markdown('7. Repeat the steps for additional chats.')
+if uploaded_file:
+    df = functions.generateDataFrame(uploaded_file)
     try:
         dayfirst = st.radio("Select Date Format in text file:",('dd-mm-yy', 'mm-dd-yy'))
         if dayfirst=='dd-mm-yy':
@@ -123,3 +175,14 @@ if file:
 
     except Exception as e:
         st.subheader("Unable to Process Your Request")
+
+        st.subheader('Stay tune for more updates!!')
+
+        col1, col2, col3 = st.columns(3)
+        with col2:
+            st.markdown('\n')
+            st.markdown('\n')
+            st.markdown('\n')
+            st.image('https://media.giphy.com/media/xKRQG1M6w1ki10mHZY/giphy.gif', caption="Thank You!!")
+
+        
